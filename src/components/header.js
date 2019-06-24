@@ -1,28 +1,50 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React, { useState } from "react";
+import { Link } from "gatsby";
+import cx from "classnames";
+import logo from "../images/logo.svg";
 
-function Header({ siteTitle }) {
-  const [isExpanded, toggleExpansion] = useState(false);
-
+const StyledLink = ({ className, ...props }) => {
+  className = cx(className);
   return (
-    <nav className="bg-teal-500">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link to="/" className="flex items-center no-underline text-white">
-          <svg
-            className="fill-current h-8 mr-2 w-8"
-            width="54"
-            height="54"
-            viewBox="0 0 54 54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
-          <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
-        </Link>
+    <Link className={className} {...props}>
+      {props.children}
+    </Link>
+  );
+};
+
+const HeaderLink = ({ className, children, ...props }) => {
+  className = cx(
+    "w-full md:w-auto py-2 md:px-1 -mb-1 text-sm font-medium uppercase hover:text-indigo-500 border-transparent border-b-4 md:hover:border-indigo-600 relative",
+    className
+  );
+  return (
+    <div className="inline-block px-1">
+      <Link
+        className={className}
+        {...props}
+        activeClassName="md:border-indigo-600"
+      >
+        {children}
+      </Link>
+    </div>
+  );
+};
+
+const Header = ({ className, ...props }) => {
+  let [isExpanded, toggleExpansion] = useState(false);
+
+  className = cx("w-full shadow-md", className);
+  return (
+    <div className={className} {...props}>
+      <div className="flex flex-wrap flex-row items-start md:items-center justify-between px-8 md:px-16 lg:px-32 text-indigo-700">
+        <div className="my-2">
+          <Link to="/">
+            <img className="w-3/5" alt="Figurit Homepage" src={logo} />
+          </Link>
+        </div>
 
         <button
-          className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
+          className="block relative md:hidden border border-indigo-700 my-2 px-3 py-2"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -38,42 +60,17 @@ function Header({ siteTitle }) {
         <div
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
+          } md:block w-full md:w-auto flex flex-col md:flex-row justify-center md:justify-end items-start md:items-center py-1`}
         >
-          <div className="text-sm">
-            <Link
-              to="/"
-              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
-            >
-              Home
-            </Link>
-
-            <Link
-              to="/about"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
-            >
-              About
-            </Link>
-
-            <Link
-              to="/contact"
-              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
-            >
-              Contact
-            </Link>
-          </div>
+          <HeaderLink to="/">Home</HeaderLink>
+          <HeaderLink to="/services">Services</HeaderLink>
+          <HeaderLink to="/team">Team</HeaderLink>
+          <HeaderLink to="/testimonials">Testimonials</HeaderLink>
+          <HeaderLink to="/contact">Contact</HeaderLink>
         </div>
       </div>
-    </nav>
+    </div>
   );
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-  siteTitle: ``
 };
 
 export default Header;

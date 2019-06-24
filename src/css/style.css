@@ -36,6 +36,31 @@
  * @import "components/forms";
  */
 
+.testimonial-quote {
+    display: block;
+    border-width: 3px 0 0 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+}
+
+.testimonial-quote:before{
+    @apply text-indigo-700;
+    content: '\201C';
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    background: #fff;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -60,3 +85,21 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.-translate-1 {
+  transform: translateY(-1px);
+}
+
+.hover\:-translate-1:hover {
+  transform: translateY(-1px);
+}
+
+.skew-y-5 {
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
+.-skew-y-5 {
+  -webkit-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
