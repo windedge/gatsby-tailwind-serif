@@ -18,7 +18,7 @@ const HeaderLink = ({ className, children, ...props }) => {
     className
   );
   return (
-    <div className="inline-block px-1">
+    <div className="flex px-1">
       <Link
         className={className}
         {...props}
@@ -60,7 +60,7 @@ const Header = ({ className, ...props }) => {
         <div
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:block w-full md:w-auto flex flex-col md:flex-row justify-center md:justify-end items-start md:items-center py-1`}
+          } w-full md:w-auto flex md:flex flex-col md:flex-row justify-center md:justify-end items-stretch md:items-center py-1`}
         >
           <HeaderLink to="/">Home</HeaderLink>
           <HeaderLink to="/services">Services</HeaderLink>
