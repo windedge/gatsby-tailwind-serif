@@ -11,7 +11,7 @@ export default ({ data }) => {
   const { service } = data;
   const title = service.frontmatter.title;
   return (
-    <Layout headerClass="relative bg-white" bodyClass="px-0 md:px-0 lg:px-0">
+    <Layout headerClass="relative bg-white" bodyClass="container mx-auto px-0 md:px-0 lg:px-0">
       <SEO title={title} />
 
       <div
