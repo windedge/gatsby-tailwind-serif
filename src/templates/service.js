@@ -11,7 +11,7 @@ export default ({ data }) => {
   const { service } = data;
   const title = service.frontmatter.title;
   return (
-    <Layout headerClass="relative bg-white" bodyClass="container mx-auto px-0 md:px-0 lg:px-0">
+    <Layout headerClass="relative bg-white" bodyClass="px-0 md:px-0 lg:px-0">
       <SEO title={title} />
 
       <div
@@ -19,7 +19,7 @@ export default ({ data }) => {
         style={{ backgroundImage: svg }}
       >
         <div className="mt-56 bg-white px-8 md:px-16 lg:px-32 pb-16 mb-20 skew-y-5">
-          <div className="pt-24 -skew-y-5">
+          <div className="container mx-auto px-6 md:px-16 lg:px-32 pt-24 -skew-y-5">
             <h2 className="text-5xl text-indigo-700">
               {title}
             </h2>
