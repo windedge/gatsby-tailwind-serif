@@ -8,4 +8,4 @@ A Gatsby theme based on [Gatsby Serif Theme](https://github.com/JugglerX/gatsby-
 
 ## Demo
 
-See the [Link](https://tailwind-serif.netlify.com)
+See the [Link](https://gatsby-tailwind-serif.netlify.com)
