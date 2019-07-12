@@ -67,6 +67,6 @@
   },
   "resolutions": {
     "terser": "4.0.0",
-    "terser-webpack-plugin/terser": "4.0.0",
+    "terser-webpack-plugin/terser": "4.0.0"
   }
 }
