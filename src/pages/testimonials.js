@@ -31,10 +31,10 @@ const Testimonials = ({ data }) => {
         </div>
         <div className="w-full mt-16 flex flex-row flex-wrap justify-between">
           {testimonials.map(({ node }) => {
-            const { title, name, jobtitle } = node.frontmatter;
+            const { title, name, jobtitle, path } = node.frontmatter;
             const html = node.html;
             return (
-              <Testimonial title={title} name={name} jobTitle={jobtitle}>
+              <Testimonial key={path} title={title} name={name} jobTitle={jobtitle}>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </Testimonial>
             );
