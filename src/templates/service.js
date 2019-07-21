@@ -18,8 +18,8 @@ export default ({ data }) => {
         className="min-h-screen flex flex-col items-start bg-no-repeat bg-fixed bg-cover"
         style={{ backgroundImage: svg }}
       >
-        <div className="mt-56 bg-white px-8 md:px-16 lg:px-32 pb-16 mb-20 skew-y-5">
-          <div className="container mx-auto px-6 md:px-16 lg:px-32 pt-24 -skew-y-5">
+        <div className="mt-56 bg-white w-full pb-16 mb-20 skew-y-5">
+          <div className="container mx-auto px-6 md:px-10 lg:px-24 pt-16 -skew-y-5">
             <h2 className="text-5xl text-indigo-700">
               {title}
             </h2>
