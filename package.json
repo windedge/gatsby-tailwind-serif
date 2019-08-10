@@ -20,8 +20,7 @@
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-helmet": "5.2.1",
-    "tailwindcss-transforms": "^2.1.0"
+    "react-helmet": "5.2.1"
   },
   "keywords": [
     "gatsby",
@@ -53,7 +52,8 @@
     "eslint-plugin-react": "7.14.2",
     "eslint-plugin-react-hooks": "1.6.1",
     "prettier": "1.18.2",
-    "tailwindcss": "1.0.4"
+    "tailwindcss": "1.1.1",
+    "tailwindcss-transforms": "^2.1.0"
   },
   "Repository": {
     "type": "git",
