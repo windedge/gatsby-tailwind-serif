@@ -33,7 +33,7 @@ const Profile = ({ name, title, url, email, image, children }) => {
   );
 };
 
-const Team = ({data}) => {
+const Team = ({ data }) => {
   const members = data.allMarkdownRemark.edges;
 
   return (
@@ -46,29 +46,36 @@ const Team = ({data}) => {
       >
         <div className="container w-3/4 md:w-1/2 mt-20 font-serif font-hairline self-start">
           <h1 className="text-3xl md:text-5xl text-indigo-700 leading-tight">
-            Meet The Team
+            Hvem er vi?
           </h1>
           <p className="text-base">
-            Our team of qualified accountants and financial consultants can help
-            your business at any stage of it’s growth.
+            Her er de ansatte pr. November 2019 hos Horten Tannhelse AS.
           </p>
         </div>
 
         <div className="flex flex-wrap mt-10 md:mt-16 lg:mt-24">
-          {members.map(({node}) => {
-            const {title, jobtitle, email, linkedinurl, image, path} = node.frontmatter
+          {members.map(({ node }) => {
+            const {
+              title,
+              jobtitle,
+              email,
+              linkedinurl,
+              image,
+              path
+            } = node.frontmatter;
             return (
-            <Profile
-              name={title}
-              title={jobtitle}
-              url={linkedinurl}
-              email={email}
-              image={withPrefix(image)}
-              key={path}
-            >
-              {node.excerpt}
-            </Profile>
-          )})}
+              <Profile
+                name={title}
+                title={jobtitle}
+                url={linkedinurl}
+                email={email}
+                image={withPrefix(image)}
+                key={path}
+              >
+                {node.excerpt}
+              </Profile>
+            );
+          })}
         </div>
       </div>
     </Layout>

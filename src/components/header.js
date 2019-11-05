@@ -39,7 +39,7 @@ const Header = ({ className, ...props }) => {
       <div className="flex flex-wrap flex-row items-start md:items-center justify-between px-6 md:px-10 lg:px-24 text-indigo-700">
         <div className="my-2">
           <Link to="/">
-            <img className="w-3/5" alt="Figurit Homepage" src={logo} />
+            <img className="w-3/5" alt="Horten Tannhelse" src={logo} />
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ const Header = ({ className, ...props }) => {
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Menu</title>
+            <title>Meny</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
@@ -62,11 +62,11 @@ const Header = ({ className, ...props }) => {
             isExpanded ? `block` : `hidden`
           } w-full md:w-auto flex md:flex flex-col md:flex-row justify-center md:justify-end items-stretch md:items-center py-1`}
         >
-          <HeaderLink to="/">Home</HeaderLink>
-          <HeaderLink to="/services">Services</HeaderLink>
-          <HeaderLink to="/team">Team</HeaderLink>
-          <HeaderLink to="/testimonials">Testimonials</HeaderLink>
-          <HeaderLink to="/contact">Contact</HeaderLink>
+          <HeaderLink to="/">Hjem</HeaderLink>
+          <HeaderLink to="/services">Tjenester</HeaderLink>
+          <HeaderLink to="/team">Om oss</HeaderLink>
+          <HeaderLink to="/testimonials">Kundeomtale</HeaderLink>
+          <HeaderLink to="/contact">Kontakt</HeaderLink>
         </div>
       </div>
     </div>

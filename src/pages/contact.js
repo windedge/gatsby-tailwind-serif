@@ -11,7 +11,9 @@ const Contact = () => {
 
       <div className="min-h-screen mb-6 flex flex-col items-start">
         <div className="w-3/4 md:w-1/2 mt-24 font-serif font-hairline">
-          <h1 className="text-4xl md:text-5xl text-indigo-700">Contact</h1>
+          <h1 className="text-4xl md:text-5xl text-indigo-700">
+            Kontakt og besøk
+          </h1>
         </div>
         <div
           className="w-full sm:w-3/4 lg:w-1/2 mt-10 px-6 py-4"
@@ -21,55 +23,55 @@ const Contact = () => {
           }}
         >
           <p>
-            <strong>Phone:</strong> XXX XXX XXX
+            <strong>Telefon: </strong> 33 04 11 47
           </p>
           <p>
-            <strong>Email: </strong>xxx@xxx.com
+            <strong>Adresse: </strong>Harald Pedersensgt. 9,3182 Horten
           </p>
         </div>
         <div className="w-full">
-          <h3 className="mt-10 text-2xl">Business Hours</h3>
+          <h3 className="mt-10 text-2xl">Åpnings tider</h3>
           <table className="w-full md:w-3/4 text-left w-full border-collapse">
             <tbody>
               <tr className="border-t h-10">
-                <td className="font-semibold">Monday</td>
-                <td>8:30am</td>
+                <td className="font-semibold">Mandag</td>
+                <td>08:00</td>
                 <td>-</td>
-                <td>5:00pm</td>
+                <td>16:00</td>
               </tr>
               <tr className="border-t h-10">
-                <td className="font-semibold">Tuesday</td>
-                <td>8:30am</td>
+                <td className="font-semibold">Tirsdag</td>
+                <td>08:00</td>
                 <td>-</td>
-                <td>5:00pm</td>
+                <td>16:00</td>
               </tr>
               <tr className="border-t h-10">
-                <td className="font-semibold">Wednesday</td>
-                <td>8:30am</td>
+                <td className="font-semibold">Onsadg</td>
+                <td>08:00</td>
                 <td>-</td>
-                <td>5:00pm</td>
+                <td>16:00</td>
               </tr>
               <tr className="border-t h-10">
-                <td className="font-semibold">Thursday</td>
-                <td>8:30am</td>
+                <td className="font-semibold">Torsdag</td>
+                <td>08:00</td>
                 <td>-</td>
-                <td>5:00pm</td>
+                <td>16:00</td>
               </tr>
               <tr className="border-t h-10">
-                <td className="font-semibold">Friday</td>
-                <td>8:30am</td>
+                <td className="font-semibold">Fredag</td>
+                <td>08:00</td>
                 <td>-</td>
-                <td>5:00pm</td>
+                <td>16:00</td>
               </tr>
               <tr className="border-t h-10">
-                <td className="font-semibold">Saturday</td>
-                <td>Closed</td>
+                <td className="font-semibold">Lørdag</td>
+                <td>Stengt</td>
                 <td />
                 <td />
               </tr>
               <tr className="border-t h-10">
-                <td className="font-semibold">Sunday</td>
-                <td>Closed</td>
+                <td className="font-semibold">Søndag</td>
+                <td>Stengt</td>
                 <td />
                 <td />
               </tr>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import favicon from '../../static/favicon.png';
+import favicon from "../../static/favicon.png";
 
 function SEO({ description, lang, meta, keywords, title }) {
   const data = useStaticQuery(
@@ -70,15 +70,13 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-      link={[
-        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
-      ]}
+      link={[{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }]}
     />
   );
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `nb`,
   meta: [],
   keywords: []
 };

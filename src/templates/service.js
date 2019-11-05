@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -20,11 +20,9 @@ export default ({ data }) => {
       >
         <div className="mt-56 bg-white w-full pb-16 mb-20 skew-y-5">
           <div className="container mx-auto px-6 md:px-10 lg:px-24 pt-16 -skew-y-5">
-            <h2 className="text-5xl text-indigo-700">
-              {title}
-            </h2>
+            <h2 className="text-5xl text-indigo-700">{title}</h2>
             <div className="markdown-body">
-              <div dangerouslySetInnerHTML={{ __html: service.html }}></div>
+              <div dangerouslySetInnerHTML={{ __html: service.html }} />
             </div>
           </div>
         </div>

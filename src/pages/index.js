@@ -47,12 +47,13 @@ function Index({ data }) {
       >
         <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 font-serif font-hairline self-start">
           <h1 className="text-3xl md:text-5xl text-indigo-700 leading-tight">
-            Serif - Gatsby Small Business Theme.
+            Horten Tannhelse
           </h1>
           <p className="text-base">
-            Multiple content types using Markdown and JSON sources. Responsive
-            design and SCSS. This is a beautiful and artfully designed starting
-            theme.
+            Horten Tannhelse har to tannleger, en tannpleier og to
+            tannhelsesekretærer. Vi jobber tett med vårt andre kontor i Revetal
+            (Revetal tannlegesenter). Vi holder til ved gamle Horten Sykehus,
+            helt øverst. Med gratis parkering rett utenfor.
           </p>
         </div>
 
@@ -66,17 +67,17 @@ function Index({ data }) {
           >
             <div className="flex-1">
               <p>
-                <strong>Phone: </strong>
-                XXX XXX XXX
+                <strong>Telefon:</strong>
+                33 04 11 47
               </p>
               <p>
-                <strong>Email: </strong>
-                xxx@xxx.com
+                <strong>Adresse:</strong>
+                Harald Pedersensgt. 9, 3182 Horten
               </p>
             </div>
             <div className="flex-initial mt-6 sm:mt-0">
               <Link to="/contact">
-                <StyledButton>Contact</StyledButton>
+                <StyledButton>Kontakt</StyledButton>
               </Link>
             </div>
           </div>
@@ -84,7 +85,7 @@ function Index({ data }) {
 
         <div className="flex flex-col mt-10 md:mt-16">
           <p className="mb-2 text-4xl text-gray-800 self-center">
-            Our Services
+            Tannlege tjenester vi utfører
           </p>
 
           <div className="flex flex-wrap">
@@ -101,14 +102,14 @@ function Index({ data }) {
 
           <div className="self-center mt-8">
             <Link to="/services">
-              <StyledButton>View all services</StyledButton>
+              <StyledButton>Vis alle tjenester</StyledButton>
             </Link>
           </div>
         </div>
 
         <div className="flex flex-col mt-10 md:mt-16">
           <p className="mb-2 text-4xl text-gray-800 self-center">
-            Our Features
+            Hvorfor velge oss som din tannlege
           </p>
 
           <div className="flex flex-wrap justify-center items-stretch -mx-2">
@@ -117,8 +118,11 @@ function Index({ data }) {
                 <div className="w-16 h-16 mb-4">
                   <img alt="branding" src={branding} />
                 </div>
-                <p className="text-2xl w-full">Free Consultation</p>
-                <p>New clients recieve an obligation free consultation.</p>
+                <p className="text-2xl w-full">Kundevennlig</p>
+                <p>
+                  Vi tar imot nye og eksiterende kunder med lik tilbøylighet og
+                  forståeldse.
+                </p>
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/3 mt-2">
@@ -126,8 +130,11 @@ function Index({ data }) {
                 <div className="w-16 h-16 mb-4">
                   <img alt="processing" src={processing} />
                 </div>
-                <p className="text-2xl w-full">Certified Accountants</p>
-                <p>All members of our team are certified accountants.</p>
+                <p className="text-2xl w-full">Statlig sertifisert</p>
+                <p>
+                  Vi oppfyller alle nødvendige krav om sertfisering og
+                  utdanning.
+                </p>
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/3 mt-2">
@@ -135,8 +142,8 @@ function Index({ data }) {
                 <div className="w-16 h-16 mb-4">
                   <img alt="modeling" src={modeling} />
                 </div>
-                <p className="text-2xl w-full">Tax Compliance</p>
-                <p>We stay up to date on the latest changes to the tax code.</p>
+                <p className="text-2xl w-full">Gratis parkering </p>
+                <p>Inngang rett ved parkeringsplassen. ;)</p>
               </div>
             </div>
           </div>
