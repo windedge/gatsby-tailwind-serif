@@ -11,7 +11,7 @@ const Footer = ({ className, ...props }) => {
     <>
       <div className={className} {...props}>
         <div className="flex-initial text-xl font-semibold">
-          Din Tannlege Horten Tannhelse{" "}
+          Din Tannlege Horten Tannhelse
         </div>
         <div>
           <ul className="flex flex-col md:flex-row text-sm -mx-3 font-medium">
@@ -31,7 +31,7 @@ const Footer = ({ className, ...props }) => {
           <strong className="font-bold">Tel: </strong>
           33 04 11 47
           <strong className="ml-3 font-bold">Adresse: </strong>
-          Harald Pedersensgt.9, 3182 Horten, Norge
+          Harald Pedersensgate 9, 3182 Horten
         </div>
         <div>
           <Link to="/" className="hover:underline">

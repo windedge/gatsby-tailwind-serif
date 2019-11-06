@@ -1,34 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tailwind Serif`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@windedge`
+    title: `Horten Tannhelse AS`,
+    description: `Din tannlege i Horten`,
+    author: `@webmaeistro`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-tailwind--serif`,
-        short_name: `serif`,
+        name: `Horten Tannhelse AS`,
+        short_name: `horten-tannhelse`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#0b4e8d`,
         display: `minimal-ui`,
         icon: `static/favicon.png`
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content`,
-        name: 'services'
+        name: "services"
       }
     },
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-postcss',
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -36,6 +36,6 @@ module.exports = {
         purgeOnly: ["src/css/style.css"]
       }
     },
-    'gatsby-plugin-offline'
+    "gatsby-plugin-offline"
   ]
 };

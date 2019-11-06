@@ -1,8 +1,8 @@
 {
-  "name": "@windedge/gatsby-tailwind-serif",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "1.0",
-  "author": "@windedge",
+  "name": "Horten-Tannhelse",
+  "description": "Gatsby dentist site in Norwegian serif styled with Tailwind",
+  "version": "2.0",
+  "author": "@webmaeistro",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "2.9.11",
@@ -22,12 +22,7 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
-  ],
+  "keywords": ["gatsby", "tailwind", "tailwindcss", "purgecss"],
   "license": "MIT",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -57,10 +52,10 @@
   },
   "Repository": {
     "type": "git",
-    "url": "https://github.com/windedge/gatsby-tailwind-serif"
+    "url": "https://github.com/webmaeistro/horten-tannhelse"
   },
   "bugs": {
-    "url": "https://github.com/windedge/gatsby-tailwind-serif/issues"
+    "url": "https://github.com/webmaeistro/horten-tannhelse/issues"
   },
   "publishConfig": {
     "access": "public"
