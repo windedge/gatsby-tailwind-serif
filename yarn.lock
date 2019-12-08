@@ -10427,10 +10427,8 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-serialize-javascript@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.npm.taobao.org/serialize-javascript/download/serialize-javascript-1.7.0.tgz#d6e0dfb2a3832a8c94468e6eb1db97e55a192a65"
-  integrity sha1-1uDfsqODKoyURo5usduX5VoZKmU=
+serialize-javascript@^2.1.1:
+  version "2.1.1"
 
 serve-index@^1.9.1:
   version "1.9.1"
