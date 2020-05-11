@@ -4,7 +4,7 @@ import home from "../images/undraw_taking_notes_tjaf.svg";
 import branding from "../images/noun_branding_1885335.svg";
 import processing from "../images/noun_The Process_1885341.svg";
 import modeling from "../images/noun_3d modeling_1885342.svg";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
