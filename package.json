@@ -1,7 +1,7 @@
 {
   "name": "@windedge/gatsby-tailwind-serif",
   "description": "Gatsby starter styled with Tailwind",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "@windedge",
   "dependencies": {
     "classnames": "^2.2.6",
